@@ -1,0 +1,8 @@
+Protein secondary structure prediction with a neural network: 
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC286422/pdf/pnas00241-0168.pdf
+
+https://se.mathworks.com/help/bioinfo/ug/predicting-protein-secondary-structure-using-a-neural-network.html;jsessionid=3ba4f1330888c9f91b2d82569dbc
+
+
+Data:
+https://archive.ics.uci.edu/ml/datasets/Molecular+Biology+(Protein+Secondary+Structure)
