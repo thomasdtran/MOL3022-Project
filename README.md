@@ -6,16 +6,18 @@ Thomas Tran - ttdtran@stud.ntnu.no
 
 ## Getting started
 
-The repository consists of two main folders, ```Frontend``` which contains the source code for the web applcation, and ```Backend``` which contains the necessary scripts to train and load the network, as well as the REST API for the web application. 
+The repository consists of two main folders, ```frontend``` which contains the source code for the web applcation, and ```backend``` which contains the necessary scripts to train and load the network, as well as the REST API for the web application. 
 
 ### Frontend
 
-To spin up the site locally, you have to run the following commands from the `Frontend` directory:
+To spin up the site locally, you have to run the following commands from the `frontend` directory:
 
 ```
 npm install
 npm run dev
 ```
+
+The site will be running on `http://localhost:8080`.
 
 ### Backend
 
@@ -24,13 +26,13 @@ The backend consists of two parts: The Feed-Forward Neural Network and the REST 
 #### Feed-Forward Neural Network
 
 ##### Setup
-Run the following command in the `Backend` folder to install the necessary dependencies to train the model:
+Run the following command in the `backend` folder to install the necessary dependencies to train the model:
 
 ```pip install -r requirements.txt```
 
 ##### Training
 
-**NOTE:** There is already trained model saved in the folder `saved_model`, if you dont want to retrain the model.
+(**NOTE:** There is already trained model saved in the folder `saved_model`, if you dont want to retrain the model.)
 
 In order to train the model, run the following command:
 
@@ -40,10 +42,11 @@ There is a `.env` file with variables for `WINDOW_SIZE`, `ACCURACY_THRESHOLD`, `
 
 #### REST API
 
-To spin up the API locally, run the following command from the `Backend` folder:
+To spin up the API locally, run the following command from the `backend` folder:
 
 `flask --app endpoints run`
 
+The API will be running on `http://127.0.0.1:5000`.
 
 
 
