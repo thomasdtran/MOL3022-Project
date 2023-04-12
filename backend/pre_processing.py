@@ -1,46 +1,21 @@
+"""
+Script containing methods to process the data used to train the neural network
+"""
+
 import os
 from dotenv import load_dotenv
 
 import numpy as np
 
-"""
-Methods to process the data used to train the neural network
-"""
+from dict import amino_acids_dict, secondary_protein_struct
 
 load_dotenv()
 
+win_size = int(os.getenv('WINDOW_SIZE'))
+
 # How many residues to include on each side of a residue in the sliding window.
-# An offset of 8 gives a window size of 17.
-win_offset = int(os.getenv('WINDOW_OFFSET'))
-
-# stores the index of each amino acid for later use in the input layer
-amino_acids_dict = {
-    "A": 0,
-    "R": 1,
-    "N": 2,
-    "D": 3,
-    "C": 4,
-    "Q": 5,
-    "E": 6,
-    "G": 7,
-    "H": 8,
-    "I": 9,
-    "L": 10,
-    "K": 11,
-    "M": 12,
-    "F": 13,
-    "P": 14,
-    "S": 15,
-    "T": 16,
-    "W": 17,
-    "Y": 18,
-    "V": 19,
-    "*": 20
-}
-
-# stores the index of the two most common secondary protein structures: α-helix and β-sheet.
-# if am amino acid is neither α-helix ('H') or β-sheet ('E'), then it is a random coil ('_'):
-secondary_protein_struct = {"h": 0, "e": 1, "_": 2}
+# A window size of 17 gives and offset 8.
+win_offset = win_size // 2
 
 
 """
@@ -94,7 +69,6 @@ def read_data(arg_filename):
                         protein_seq_string += line[0]
                         structure_string += line[2]
 
-    print("Number of proteins: {}".format(len(protein_sequences)))
     return protein_sequences, structures
 
 
@@ -102,8 +76,6 @@ def read_data(arg_filename):
 Creates all the subsequences for all the protein sequences made by the sliding window with
 the corresponding structures for the amino acids in the middle of each sliding window subsequence.
 """
-
-
 def create_all_possible_windows(protein_sequences, structures=None, training=True):
 
     all_sliding_windows = []

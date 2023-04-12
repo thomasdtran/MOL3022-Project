@@ -1,0 +1,5 @@
+numpy
+tensorflow
+python-dotenv
+flask
+flask-cors
