@@ -17,7 +17,7 @@ npm install
 npm run dev
 ```
 
-The site will be running on [http://localhost:8080].
+The site will be running on http://localhost:8080.
 
 ### Backend
 
@@ -46,7 +46,7 @@ To spin up the API locally, run the following command from the `backend` folder:
 
 `flask --app endpoints run`
 
-The API will be running on [http://127.0.0.1:5000].
+The API will be running on http://127.0.0.1:5000.
 
 
 
