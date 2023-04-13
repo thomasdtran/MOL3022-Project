@@ -34,7 +34,7 @@ Run the following command in the `backend` folder to install the necessary depen
 
 (**NOTE:** There is already trained model saved in the folder `saved_model`, if you dont want to retrain the model.)
 
-In order to train the model, run the `train.py`script: 
+In order to train the model, run the `train.py` script: 
 
 ```python train.py```
 
