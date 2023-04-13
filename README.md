@@ -44,9 +44,9 @@ There is a `.env` file with variables for `WINDOW_SIZE`, `ACCURACY_THRESHOLD`, `
 
 #### REST API
 
-To spin up the API locally, run the following command from the `backend` folder:
+To spin up the API locally, run the `endpoints.py` script from the `backend` folder like following:
 
-`flask --app endpoints run`
+`flask --app endpoints.py run`
 
 The API will be running on http://127.0.0.1:5000.
 
