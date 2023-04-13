@@ -13,7 +13,7 @@
 
 <div id="container">
 	<h1>Secondary Structure Prediction 🧬</h1>
-	<p>Insert a protein sequence below, and get the predicted secondary structure.</p>
+	<p>Insert a protein sequence below, and get the predicted secondary structures.</p>
 	<Input on:message={handleMessage}/>
 	<p id="message">☝️ Enter protein sequence!</p>
 	<ResultWindow {predictionSegments}/>
