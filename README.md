@@ -1,5 +1,5 @@
 # Predicting Secondary Structures of Proteins Using a Feed-Forward Neural Network Model
-Welcome to the repository for my project in MOL3022 - Bioinformatics - Method Oriented Project Predicting. It contains the source code for the implementation of a Feed-Forward Neural Network trained to predict the secondary structure of proteins, as well as the web application to test out the model and its predictions.
+Welcome to the repository for my project in MOL3022 - Bioinformatics - Method Oriented Project Predicting. It contains the source code for the implementation of a Feed-Forward Neural Network trained to predict the secondary structure of proteins, as well as a web application to test out the model and its predictions.
 
 ## Authors
 Thomas Tran - ttdtran@stud.ntnu.no
