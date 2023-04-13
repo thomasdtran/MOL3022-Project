@@ -10,6 +10,8 @@ The repository consists of two main folders, ```frontend``` which contains the s
 
 ### Frontend
 
+(**NOTE:** You will need Node.js installed to run `npm`)
+
 To spin up the site locally, you have to run the following commands from the `frontend` directory:
 
 ```
